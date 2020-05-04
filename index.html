@@ -17,15 +17,16 @@
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="portstyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/portstyle.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolioNavBar" aria-controls="portfolioNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolioNavBar"
+            aria-controls="portfolioNavBar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        <a class="navbar-brand" href="index.html"><img src="img/BehaviorFaces/ChrisFace.PNG" width="50%"></a>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/BehaviorFaces/ChrisFace.PNG" width="50%" id="navbarAvatar" class="navbarAvatar" onmouseover="this.src='img/BehaviorFaces/ChrisFace2.PNG'" onmouseout="this.src='img/BehaviorFaces/ChrisFace.PNG'"></a>
         <div class="collapse navbar-collapse" id="portfolioNavBar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav item active">
@@ -35,14 +36,14 @@
                     <a class="nav-link dropdown-toggle" href="#" id="projectDropDown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dev Projects</a>
                     <div class="dropdown-menu" aria-labelledby="Dropdown">
-                        <a class="dropdown-item" href="#">Full Circle Motion (In Progress)</a>
+                        <a class="dropdown-item" href="">Full Circle Motion (In Progress)</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="projectDropDown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</a>
                     <div class="dropdown-menu" aria-labelledby="Dropdown">
-                        <a class="dropdown-item" href="soloprojects.html">Solo Projects</a>
+                        <a class="dropdown-item navbutton solo_link" href="soloprojects.html">Solo Projects</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="vinylspectrum.html">Vinyl Spectrum</a>
                         <a class="dropdown-item" href="theothertones.html">The Other Tones</a>
@@ -53,8 +54,10 @@
                     <a class="nav-link dropdown-toggle" href="#" id="projectDropDown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gaming Content</a>
                     <div class="dropdown-menu" aria-labelledby="Dropdown">
-                        <a class="dropdown-item" href="https://www.twitch.tv/mrbehavior"><i class="fa fa-twitch"></i>  Twitch</a>
-                        <a class="dropdown-item" href="https://www.youtube.com/locstakes"><i class="fa fa-youtube"></i>  YouTube</a>
+                        <a class="dropdown-item" href="https://www.twitch.tv/mrbehavior"><i class="fa fa-twitch"></i>
+                            Twitch</a>
+                        <a class="dropdown-item" href="https://www.youtube.com/locstakes"><i class="fa fa-youtube"></i>
+                            YouTube</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -68,38 +71,30 @@
         <a href="https://www.twitter.com/realmrbehavior"><i class="fa fa-3x fa-lg fa-fw fa-twitter"></i></a>
         <a href="https://www.github.com/christopherguyton"><i class="fa fa-3x fa-lg fa-fw fa-github"></i></a>
     </nav>
-    <section class="has-text-centered">
-        <div class="hero-body">
+    <section class="is-centered">
             <div class="container">
-                <div class="columns is-centered">
-                    <div class="column">
-                        <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Full Stack
-                            Developer, Gaming Enthusiast, Musician</h1>
-                        <h2 class="is-size-4-desktop">Playing Games, Making Music and Building Websites!</h2>
-                        <img class="img-thumbnail img-fluid rounded" src="img/BehaviorFaces/behaviour1w.png" alt="Chris' Avatar"
-                            width="50%" class="collapse" id="happyFace">
-                        <!---Maybe Put Some Buttons Up-->
-                            <!--- <div class="row">
-                             <div class="col">
-                             <button class="btn btn-success btn-lg float-left" id="buttonCrossArms">Serious Face</button>
-                             <button class="btn btn-success btn-lg justify-content-center" id="buttonHappyFace">Happy Face</button>
-                             <button class="btn btn-success btn-lg float-right" id="buttonQuestioning">Questioning Face</button> --->
-                    </div>
+                <div class="col is-centered">
+                    <h1 class="is-size-1-desktop is-size-2-tablet is-size-3-mobile">Web
+                        Developer, Gaming Enthusiast, Musician</h1>
+                    <h2>Playing Games, Making Music and Building Websites!</h2>
+                    <img class="img-thumbnail img-fluid rounded" src="img/BehaviorFaces/behaviour1w.png"
+                        alt="Chris' Avatar" width="50%" class="collapse" id="happyFace">
+                </div>
+            </div>
+    </section>
+    <section class="has text is-centered bottom-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <h2>Hello, I'm Chris. Thanks For Stopping By!</h1>
+                        <h3>This site was developed by me primarily to showcase my web development skills, but it also
+                            contains content from my various ventures on the internet. Feel free to explore and shoot
+                            out some communication my way if you're interested in working with me! </h3>
                 </div>
             </div>
         </div>
-    </section>
-<section class="has text is-centered bottom-section">
-<div class="container">
-    <div class="columns is-centered">
-        <div class="column">
-        <h2>Hello, I'm Chris. Thanks For Stopping By!</h1>
-            <h3>This site was developed by me primarily to showcase my web development skills, but it also contains content from my various ventures on the internet. Feel free to explore and shoot out some communication my way if you're interested in working with me! </h3>
-        </div>
-    </div>
-</div>
 
-</section>
+    </section>
     <footer>
         <div class="container">
             <div class="row">
