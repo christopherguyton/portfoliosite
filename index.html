@@ -21,6 +21,8 @@
 </head>
 
 <body>
+ 
+  
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolioNavBar"
             aria-controls="portfolioNavBar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +34,7 @@
                 <li class="nav item active">
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="projectDropDown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dev Projects</a>
-                    <div class="dropdown-menu" aria-labelledby="Dropdown">
-                        <a class="dropdown-item" href="">Full Circle Motion (In Progress)</a>
-                    </div>
-                </li>
+            
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="projectDropDown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</a>
@@ -61,7 +57,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Professional Resum&eacute;</a>
+                    <a href="professionalRez.html" class="nav-link">Professional Resum&eacute;</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Chris</a>
@@ -74,14 +70,23 @@
     <section class="is-centered">
             <div class="container">
                 <div class="col is-centered">
-                    <h1 class="is-size-1-desktop is-size-2-tablet is-size-3-mobile">Web
-                        Developer, Gaming Enthusiast, Musician</h1>
+                    <h1 class="is-size-1-desktop is-size-2-tablet is-size-3-mobile">Gaming Enthusiast, Musician and Aspiring Web Developer</h1>
                     <h2>Playing Games, Making Music and Building Websites!</h2>
+
+                    <!--- Button Part
+                    <button class="btn btn-warning" id="hideChris">Disappearing Act</button>  
+                    <button class="btn btn-warning" id="showChris">Reappearing Act</button>--->
                     <img class="img-thumbnail img-fluid rounded" src="img/BehaviorFaces/behaviour1w.png"
                         alt="Chris' Avatar" width="50%" class="collapse" id="happyFace">
                 </div>
             </div>
     </section>
+    <div id="musicSideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h4>Close Player &times;</h4></a>
+        <div id="contentframe" ><iframe id="portMusic" width="90%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/825114128&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+    </div>
+        <span onclick="openNav()" id="musicNav"><h3>Music Player<i class="fa fa-arrow-right fa-lg" id="musicArrow"></i></span></h3>
     <section class="has text is-centered bottom-section">
         <div class="container">
             <div class="columns is-centered">
@@ -93,8 +98,9 @@
                 </div>
             </div>
         </div>
-
     </section>
+
+    
     <footer>
         <div class="container">
             <div class="row">
@@ -105,9 +111,11 @@
             </div>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
