@@ -1,0 +1,219 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0, 100%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes moveNavBar {
+  from {
+    top: 0px; }
+  to {
+    top: 100px; } }
+
+.m-scene .scene_element {
+  animation-duration: 2.00s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; }
+
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn; }
+
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp; }
+
+.m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight; }
+
+.m-scene .scene_element--fadeinleft {
+  animation-name: fadeInLeft; }
+
+.scene_element--moveNavBar {
+  animation-name: moveNavBar; }
+
+.navbar .navbar-nav {
+  float: left;
+  margin: 10px; }
+
+h1, h2, h3 {
+  font-family: monospace; }
+
+.column {
+  display: block;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem; }
+
+.is-centered {
+  text-align: center !important; }
+
+.bottom-section {
+  background-color: black;
+  color: white; }
+
+.footer-element {
+  background-color: black;
+  color: white; }
+
+.caption-container {
+  border-style: solid; }
+
+.music-header {
+  align-content: center;
+  font-family: 'Times New Roman', Times, serif !important; }
+
+.musicFooter {
+  background-color: black;
+  color: white; }
+
+.is-spaced {
+  text-shadow: black;
+  box-shadow: black;
+  border: black;
+  border-radius: 2px;
+  border-style: dashed; }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: .5s;
+  }
+
+  .sidenav a:hover {
+    color: white;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 650px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+  }
+
+
+  #main {
+    transition: .5s;
+    margin-left: 5px;
+    padding: 20px;
+  }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#contentframe {
+  position: relative;
+  top: 160px;
+  left: 10px; 
+}
+
+#musicArrow {
+margin-left: 10px;
+}
+
+#musicNav:hover{
+  color: blue;
+}
+
+.resume-objective {
+  border: solid black;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.resume-descriptions {
+  border: solid black;
+  margin-top: 100px;
+  
+}
+.resume-heading {
+ justify-content: center;
+}
+
+.slideshow-container {
+  max-width: inherit;
+  position: relative;
+  margin: auto;
+}
+
+.resSlides {
+  display: auto;
+  transition: 2s;
+}
+
+.next {
+  position: static;
+  color: black;
+  margin-top:100px;
+  margin-left:750px;
+  margin-bottom: 100px;
+  top: 50%;
+}
+
+
+.fa-arrow-right:hover {
+  color: blue;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#avistaLogo {
+  margin-left: 100px;
+}
